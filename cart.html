@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart</title>
+    <!-- Link To CSS -->
+<link rel="stylesheet" href="css/style.css" />
+    <!-- Box Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.1/css/all.min.css" />
+
+  </head>
+  <body>
+<header>
+  <div class="nav container">
+    <i class='bx bx-menu'  id="menu-icon"></i>
+    <a href="index.html" class="logo">ART Optical</a>
+    <div class="navbar">
+      <a href="#" class="nav-link">Home</a>
+      <a href="#" class="nav-link">Glasses</a>
+      <a href="#" class="nav-link">About us</a>
+      <a href="#" class="nav-link">Contact us</a>
+    </div>
+    <a href="cart.html">
+      <i class='bx bx-shopping-bag' id="cart-icon" data-quantity="0"></i>
+    </a>
+
+  </div>
+</header>
+<!--Shopping Cart-->
+<section class="container content-section" id="shopping-cart">
+  
+  <h3 style="text-decoration: underline;text-align: center; margin-bottom: 7%;">Shopping Cart</h3>
+ 
+ <table class="table table-hover table-cart">
+  <thead>
+    <tr>
+      <th>Item</th>
+      <th>Price</th>
+      <th>Quantity</th>
+    </tr>
+  </thead>
+  <tbody class="cart-items">
+    
+     
+  </tbody>
+</table>
+
+    <div class="cart-total"> 
+      <strong class="cart-total-title">Total</strong>
+      <span  class="cart-total-price" style="text-align: right;">$0</span>
+    </div>
+ 
+
+    <div class="btn-purchase" style="margin-top: 10%;">
+      <button type="button"  class="btn btn-dark btn-purchase "><i class="fa-solid fa-cart-shopping " style="margin-right: 6%;"></i>PURCHASE</button>
+    </div>
+
+</section>
+
+
+<script src="js/main.js"></script>
+
+
+  </body>
+</html>
