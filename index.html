@@ -5,244 +5,151 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ART Optical</title>
     <!-- Link To CSS -->
-<link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <!-- Box Icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.1/css/all.min.css" />
-
   </head>
   <body>
-<header>
-  <div class="nav container">
-    <i class='bx bx-menu'  id="menu-icon"></i>
-    <a href="index.html" class="logo"></a>
-    <div class="navbar">
-      <a href="index.html" class="nav-link"><h2>Home</h2></a>
-      <div class="dropdown">
-        <button class="dropbtn"><h2>Glasses &#9662;</h2></button>
-        <div class="dropdown-content">
-          <a href="/optic"><b>Optical</b></a>
-          <a href="/sun"><b>Sunglasses</b></a>
-          <div class="newbrand">
-            <a href="/newbrand"><b>Brand</b></a>
-            <div class="brand-content">
-                <a href="#"><b>Legion</b></a>
-                <a href="#"><b>Swing</b></a>
-                <a href="#"><b>Anabela</b></a>
-                <a href="#"><b>Infinity</b></a>
+    <header>
+      <div class="nav container">
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <a href="index.html" class="logo"></a>
+        <div class="navbar">
+          <a href="index.html" class="nav-link"><h2>Home</h2></a>
+          <div class="dropdown">
+            <button class="dropbtn"><h2>Glasses &#9662;</h2></button>
+            <div class="dropdown-content">
+              <a href="optic.html"><b>Optical</b></a>
+              <a href="sun.html"><b>Sunglasses</b></a>
+              <div class="newbrand">
+                <a href="newbrand.html"><b>Brand</b></a>
+                <div class="brand-content">
+                  <a href="#"><b>Legion</b></a>
+                  <a href="#"><b>Swing</b></a>
+                  <a href="#"><b>Anabela</b></a>
+                  <a href="#"><b>Infinity</b></a>
+                </div>
+              </div>
             </div>
+          </div>
+          <a href="Aboutus.html" class="nav-link"><h2>About us</h2></a>
+          <a href="Contact.html" class="nav-link"><h2>Contact us</h2></a>
         </div>
+        <i class='bx bx-shopping-bag' id="cart-icon" data-quantity="0"></i>
+        <div class="cart">
+          <h2 class="cart-title">YOUR CART </h2>
+          <div class="cart-content"></div>
+          <div class="total">
+            <div class="total-title">Total</div>
+            <div class="total-price">$0</div>
+          </div>
+          <button type="button" class="btn-buy">Pay now</button>
+          <i class="bx bx-x" id="close-cart"></i>
         </div>
       </div>
-      <a href="Aboutus.html" class="nav-link"><h2>About us</h2></a>
-      <a href="Contact.html" class="nav-link"><h2>Contact us</h2></a>
-    </div>
-    
-    
-      <i class='bx bx-shopping-bag' id="cart-icon" data-quantity="0"></i>
-   
-<div class="cart">
-  <h2 class="cart-title">YOUR CART </h2>
-  <div class="cart-content">
-    
-    
+    </header>
 
-  </div>
-  <div class="total">
-    <div class="total-title">Total</div>
-    <div class="total-price">$0</div>
-  </div>
-  <button type="button" class="btn-buy">Pay now</button>
-  <i class="bx bx-x" id="close-cart"></i>
+    <aside class="sticky-sidebar">
+      <ul class="sidebar-list">
+        <li><button class="sidebar-btn">Legion</button></li>
+        <li><button class="sidebar-btn">Swing</button></li>
+        <li><button class="sidebar-btn">Anabela</button></li>
+        <li><button class="sidebar-btn">Infinity</button></li>
+      </ul>
+    </aside>
 
-</div>
-  </div>
-</header>
+    <section class="home" id="home">
+      <div class="home-img container"></div>
+    </section>
 
-
-
-<aside class="sticky-sidebar">
-  <ul class="sidebar-list">
-    <li><button class="sidebar-btn ">Legion</button></li>
-    <li><button class="sidebar-btn">Swing</button></li>
-    <li><button class="sidebar-btn">Anabela</button></li>
-    <li><button class="sidebar-btn">Infinity</button></li>
-  </ul>
-</aside>
-
-
-<section class="home" id="home">
-  <div class="home-img container">
-  
-  </div>
-  </section>
-
-
-  <section class="products container" id="products">
-    <h2 class="heading">Discover Product</h2>
-    <div class="products-container" id="productList">
-      <div class="glasses-box man-glasses"> 
-        
-        <button class="discoverbtn">
-          <a href="/man" style="color: white;">
-            <h2>Man Glasses</h2>
-          </a>
-        </button>
+    <section class="products container" id="products">
+      <h2 class="heading">Discover Product</h2>
+      <div class="products-container" id="productList">
+        <div class="glasses-box man-glasses">
+          <button class="discoverbtn">
+            <a href="man.html" style="color: white;"><h2>Man Glasses</h2></a>
+          </button>
+        </div>
+        <div class="glasses-box woman-glasses">
+          <button class="discoverbtn">
+            <a href="woman.html" style="color: white;"><h2>Woman Glasses</h2></a>
+          </button>
+        </div>
+        <div class="glasses-box kids-glasses">
+          <button class="discoverbtn">
+            <a href="kids.html" style="color: white;"><h2>Kids Glasses</h2></a>
+          </button>
+        </div>
       </div>
-      
-      
-      <div class="glasses-box woman-glasses"> <!-- Dodata klasa za Woman Glasses -->
-        <!-- Sadržaj za Woman Glasses -->
-        <button class="discoverbtn">
-          <a href="/woman" style="color: white;">
-            <h2>Woman Glasses</h2>
-          </a>
-        </button>
+    </section>
+
+    <section class="shop container">
+      <h2 class="section-title">Shop Products</h2>
+      <div class="shop-content">
+        <!-- Products -->
+        <div class="product-box">
+          <img src="images/1001-C1.JPG" alt="Legion" class="product-img" />
+          <h2 class="product-title">Legion</h2>
+          <span class="price">$50</span>
+          <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+        <div class="product-box">
+          <img src="images/1001-C2.JPG" alt="Legion1" class="product-img" />
+          <h2 class="product-title">Legion1</h2>
+          <span class="price">$340</span>
+          <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+        <div class="product-box">
+          <img src="images/1001-C3.JPG" alt="Legion2" class="product-img" />
+          <h2 class="product-title">Legion2</h2>
+          <span class="price">$150</span>
+          <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+        <div class="product-box">
+          <img src="images/1001-C4.JPG" alt="Legion3" class="product-img" />
+          <h2 class="product-title">Legion3</h2>
+          <span class="price">$230</span>
+          <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+        <div class="product-box">
+          <img src="images/1001-C5.JPG" alt="Legion4" class="product-img" />
+          <h2 class="product-title">Legion4</h2>
+          <span class="price">$5450</span>
+          <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+        <div class="product-box">
+          <img src="images/1001-C6.JPG" alt="Legion5" class="product-img" />
+          <h2 class="product-title">Legion5</h2>
+          <span class="price">$50</span>
+          <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+        <div class="product-box">
+          <img src="images/1001-C6.JPG" alt="Legion6" class="product-img" />
+          <h2 class="product-title">Legion6</h2>
+          <span class="price">$50</span>
+          <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+        <div class="product-box">
+          <img src="images/1001-C7.JPG" alt="Legion7" class="product-img" />
+          <h2 class="product-title">Legion7</h2>
+          <span class="price">$50</span>
+          <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
       </div>
-      <div class="glasses-box kids-glasses"> <!-- Dodata klasa za Kids Glasses -->
-        <!-- Sadržaj za Kids Glasses -->
-        <button class="discoverbtn">
-          <a href="/kids" style="color: white;">
-            <h2>Kids Glasses</h2>
-          </a>
-        </button>
-      </div>
-    </div>
-  </section>
+    </section>
 
-
-
-
-<section class="shop container">
-  <h2 class="section-title">Shop Products</h2>
-  
-  <div class="shop-content">
-    <!-- Box 1 -->
-    <div class="product-box">
-      <!-- Stripe need images that are online -->
-      <img src="images/1001-C1.JPG" 
-      alt="" 
-      class="product-img"
-      />
-      <h2 class="product-title">Legion</h2>
-      <span class="price">$50</span>
-      <i class="bx bx-shopping-bag add-cart"></i>
-
-    </div>
-
-    <!-- Box 2 -->
-    <div class="product-box">
-      <!-- Stripe need images that are online -->
-      <img src="images/1001-C2.JPG" 
-      alt="" 
-      class="product-img"
-      />
-      <h2 class="product-title">Legion1</h2>
-      <span class="price">$340</span>
-      <i class="bx bx-shopping-bag add-cart"></i>
-
-    </div>
-    <!-- Box 3 -->
-    <div class="product-box">
-      <!-- Stripe need images that are online -->
-      <img src="images/1001-C3.JPG" 
-      alt="" 
-      class="product-img"
-      />
-      <h2 class="product-title">Legion2</h2>
-      <span class="price">$150</span>
-      <i class="bx bx-shopping-bag add-cart"></i>
-
-    </div>
-    <!-- Box 4 -->
-    <div class="product-box">
-      <!-- Stripe need images that are online -->
-      <img src="images/1001-C4.JPG" 
-      alt="" 
-      class="product-img"
-      />
-      <h2 class="product-title">Legion3</h2>
-      <span class="price">$230</span>
-      <i class="bx bx-shopping-bag add-cart"></i>
-
-    </div>
-    <!-- Box 5 -->
-    <div class="product-box">
-      <!-- Stripe need images that are online -->
-      <img src="images/1001-C5.JPG" 
-      alt="" 
-      class="product-img"
-      />
-      <h2 class="product-title">Legion4</h2>
-      <span class="price">$5450</span>
-      <i class="bx bx-shopping-bag add-cart"></i>
-
-    </div>
-    <!-- Box 6 -->
-    <div class="product-box">
-      <!-- Stripe need images that are online -->
-      <img src="images/1001-C6.JPG" 
-      alt="" 
-      class="product-img"
-      />
-      <h2 class="product-title">Legion5</h2>
-      <span class="price">$50</span>
-      <i class="bx bx-shopping-bag add-cart"></i>
-
-    </div>
-    <!-- Box 7 -->
-    <div class="product-box">
-      <!-- Stripe need images that are online -->
-      <img src="images/1001-C6.JPG" 
-      alt="" 
-      class="product-img"
-      />
-      <h2 class="product-title">Legion6</h2>
-      <span class="price">$50</span>
-      <i class="bx bx-shopping-bag add-cart"></i>
-
-    </div>
-    <!-- Box 8 -->
-    <div class="product-box">
-      <!-- Stripe need images that are online -->
-      <img src="images/1001-C7.JPG" 
-      alt="" 
-      class="product-img"
-      />
-      <h2 class="product-title">Legion7</h2>
-      <span class="price">$50</span>
-      <i class="bx bx-shopping-bag add-cart"></i>
-
-    </div>
-  </div>
-</section>
-
-
-
-
-
-
-
-
-
-
-   
- 
-  </div>
-</section>
-<script src="js/main.js"></script>
-
-
+    <script src="js/main.js"></script>
   </body>
   <footer class="footer">
     <div class="footer-content">
       <div class="footer-left">
-        <h3>ART OPTIKA D.O.O </h3>
+        <h3>ART OPTIKA D.O.O</h3>
         <p>Moše Pijade 74, 26101 Pančevo</p>
       </div>
       <div class="footer-right">
         <h3>Art.optical.office@gmail.com</h3>
-        <h3>062 1183 197 </h3>
+        <h3>062 1183 197</h3>
       </div>
     </div>
   </footer>
